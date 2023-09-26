@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* primary colors */
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* neutral colors */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/* utility  classes */
+
+hr{
+    margin-block: 30px;
+}
+
+p{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+/* container */
+
+.container{
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+/* navbar */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu container */
+.menu-container{
+    gap: 50px;
+}
+
+/* menu item */
+
+.menu-item{
+    color: var(--Grayish-blue);
+    transition: ease-in 0.1s;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    color: var(--Soft-orange);
+}
+
+/* hero section */
+
+.hero{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* left-hero-section */
+
+
+/* left-hero-section-content-container */
+
+.left-hero-section-content-container{
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* left-hero-section-content-container-heading */
+.left-hero-section-content-container-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.left-hero-section-content-container-text-container-button{
+    width: 140px;
+    background-color: var(--Soft-red);
+    text-align: center;
+    margin-top: 40px;
+    padding-block: 10px;
+}
+
+.left-hero-section-content-container-text-container-button a{
+    color: white;
+    font-weight:700;
+   
+}
+
+/* left-hero-section-header-image */
+
+.left-hero-section-header-image img{
+    height: 320px;
+}
+
+/* right hero section */
+
+.right-hero-section{
+    padding: 20px;
+    background-color: var(--Very-dark-blue);
+}
+
+/* right-hero-section-heading */
+
+.right-hero-section-heading{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Soft-orange);
+}
+
+/* right-hero-section-news-container */
+
+.right-hero-section-news-container{
+    margin-top: 20px;
+}
+
+.news-item{
+    margin-block: 20px;
+}
+
+.news-item h3{
+    color: white;
+    margin-block: 10px;
+    cursor: pointer;
+}
+
+.news-item h3:hover{
+    color: var(--Soft-orange);
+}
+
+.news-item p{
+    color: var(--Grayish-blue);
+    margin-block: 20px;
+}
+
+
+/* footer */
+
+.footer{
+    margin-block: 80px;
+    justify-content: space-between;
+}
+
+.footer-item{
+    display: flex;
+    gap: 22px;
+}
+
+.footer-item-content-number{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Grayish-blue);
+    margin-bottom: 20px;
+}
+
+.footer-item-content-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: ease-in 0.2s;
+}
+
+.footer-item-content-heading:hover{
+    color: var(--Soft-orange);
+}
+
+.footer-item-content-paragraph{
+    width: 90%;
+    color: var(--Grayish-blue);
+
+}
+
+.footer-item-image img{
+    height: 150px;
+}
